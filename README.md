@@ -1,6 +1,7 @@
-# project2
+# BATCH_6_Tugas-M2
 
-A new Flutter project.
+
+Project Flutter ke-2
 
 ## Getting Started
 
