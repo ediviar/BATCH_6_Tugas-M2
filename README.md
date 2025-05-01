@@ -3,8 +3,8 @@ Project Flutter ke-2
 
 ## Project Flutter
 ![alt text](https://github.com/ediviar/BATCH_6_Tugas/blob/main/assets/images/logo.png?raw=true)
-- Project pertama
-- Tugas minggu pertama
+- Project kedua
+- Tugas minggu kedua
 
 ## Gambar Hasil
 ![alt text](https://github.com/ediviar/BATCH_6_Tugas/blob/main/assets/images/Hasil_Project.png?raw=true)
