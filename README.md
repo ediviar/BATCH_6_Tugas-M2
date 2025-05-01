@@ -1,10 +1,19 @@
 # BATCH_6_Tugas-M2
-
 Project Flutter ke-2
 
+## Project Flutter
+![alt text](https://github.com/ediviar/BATCH_6_Tugas/blob/main/assets/images/logo.png?raw=true)
+- Project pertama
+- Tugas minggu pertama
 
-## Getting Started
+## Gambar Hasil
+![alt text](https://github.com/ediviar/BATCH_6_Tugas/blob/main/assets/images/Hasil_Project.png?raw=true)
+Gambar halaman login
 
+
+
+
+# Getting Started
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
