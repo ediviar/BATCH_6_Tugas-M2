@@ -1,29 +1,69 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:project2/tugas-m2/bloc/theme_cubit.dart';
 
-class SettingPage extends StatefulWidget {
+class SettingPage extends StatelessWidget {
   const SettingPage({super.key});
-
-  @override
-  State<SettingPage> createState() => _SettingPageState();
-}
-
-class _SettingPageState extends State<SettingPage> {
-  void save() {
-    Navigator.pop(context);
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Setting Page"),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.save_as),
-            onPressed: () => save(),
-          )
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              'Setting Page',
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            const SizedBox(height: 20),
+            Card (
+              child: Padding(
+                padding: const EdgeInsets.all(18.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Theme Settings',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Row (
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text('Dark Mode'),
+                        Switch(
+                          value: context.watch<ThemeCubit>().state.isDarkMode,
+                          onChanged: (value) {
+                            context.read<ThemeCubit>().toggleTheme();
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(value
+                                    ? 'Dark Mode Enabled'
+                                    : 'Light Mode Enabled'),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
+}
+
+extension on ThemeMode {
+  bool get isDarkMode => this == ThemeMode.dark;
 }
