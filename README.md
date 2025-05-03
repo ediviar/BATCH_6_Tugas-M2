@@ -7,7 +7,8 @@ Project Flutter ke-2
 - Tugas minggu kedua
 
 ## Gambar Hasil
-![alt text](https://github.com/ediviar/BATCH_6_Tugas/blob/main/assets/images/Hasil_Project.png?raw=true)
+### Light          ### Dark
+![alt text](https://github.com/ediviar/BATCH_6_Tugas-M2/blob/main/Light.jpg?raw=true)  ![alt text](https://github.com/ediviar/BATCH_6_Tugas-M2/blob/main/Dark.jpg?raw=true)
 Gambar halaman login
 
 
